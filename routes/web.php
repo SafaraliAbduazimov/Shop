@@ -6,7 +6,7 @@ use App\Http\Controllers\AppController;
 
 
 Route::get('/',function(){
-   return 'project shopp - проект Mагазина';
+   return 'project shopp - проект Shop';
 });
 Route::get('/main','MainController@index')->name('main.index');
 Route::get('contact','ContactController@index')->name('contact.index');
