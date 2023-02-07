@@ -1,12 +1,12 @@
-@extends('layouts.shopp')
+@extends('layouts.admin')
 @section('title','Clients in the International shopp')
 @section('content')
-    <div class="p-3 mb-2 bg-warning text-white">
+    <div class=" mb-2 text-black">
         <div class="container" >
-            <a href="{{route('clients.create')}}" class="btn btn-success">Add client</a>
-            <h2 class="text-center text-white">Clients of My shopp :</h2><br>
+            <h2 class="text-center">Clients of My shopp :</h2>
+            <a href="{{route('clients.create')}}" class="mb-2 btn btn-success">Add client</a>
             <table class="table table-bordered">
-                <thead  class="table-warning">
+                <thead  class="table-danger">
                 <tr>
                     <th scope="col">Id</th>
                     <th scope="col">FirstName</th>

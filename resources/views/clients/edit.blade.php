@@ -1,7 +1,7 @@
-@extends('layouts.shopp')
+@extends('layouts.admin')
 @section('title','this is registration of clients page')
 @section('content')
-    <div class="p-3 mb-2 bg-warning text-white" >
+    <div class="p-3 mb-2  text-black" >
         <form action="{{route('clients.update',$clients->id)}}" method="post">
             @csrf
             @method('patch')

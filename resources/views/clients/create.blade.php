@@ -1,7 +1,7 @@
-@extends('layouts.shopp')
+@extends('layouts.admin')
 @section('title','this is registration of clients page')
 @section('content')
-   <div class="p-3 mb-2 bg-warning text-white" >
+   <div class="p-3 mb-2  text-black" >
        <form action="{{route('clients.store')}}" method="post">
            @csrf
            <div class="m-auto">

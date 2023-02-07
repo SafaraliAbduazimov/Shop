@@ -1,11 +1,11 @@
-@extends('layouts.shopp')
+@extends('layouts.admin')
 @section('title','this is clients page')
 @section('content')
-    <div class="p-3 mb-2 bg-warning text-white">
+    <div class="p-3 mb-2 text-black">
         <div >
-            <h2 class="text-center text-white">Clients of MyShopp :</h2><br>
+            <h2 class="text-center">Clients of MyShopp :</h2><br>
             <table class="table table-bordered">
-                <thead  class="table-warning">
+                <thead  class="table-danger">
                 <tr>
                     <th scope="col">Id</th>
                     <th scope="col">FirstName</th>
