@@ -87,7 +87,7 @@
                             <i class="fas fa-align-justify"></i>
                             <p>
                                 Clients
-                                <span class="badge badge-info right">{{$clients->total()}}</span>
+                                <span class="badge badge-info right">12</span>
                             </p>
                         </a>
                     </li>
