@@ -9,12 +9,14 @@ Route::get('/',function(){
    return 'International-Shopp';
 });
 Route::get('/home','HomeController@index')->name('home.index');
-Route::get('contact','ContactController@index')->name('contact.index');
-Route::get('about','AboutController@index')->name('about.index');
+Route::get('/contact','ContactController@index')->name('contact.index');
+Route::get('/about','AboutController@index')->name('about.index');
+
+Route::get('/product','ProductController@index')->name('product.index');
 
 
 Route::get('/clients','ClientsController@index')->name('clients.index');
-Route::get('clients/create','ClientsController@create')->name('clients.create');
+Route::get('/clients/create','ClientsController@create')->name('clients.create');
 Route::post('/clients','ClientsController@store')->name('clients.store');
 Route::get('/clients/{clients}','ClientsController@show')->name('clients.show');
 Route::get('/clients/{clients}/edit','ClientsController@edit')->name('clients.edit');

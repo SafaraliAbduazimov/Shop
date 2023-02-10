@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ClientsController extends Controller
 {
     public function index(){
-        $clients=clients::paginate(5);
+        $clients=clients::paginate(6);
         return view('clients.index', compact('clients'));
     }
    public function create(){

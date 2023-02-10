@@ -5,7 +5,7 @@
         <div class="container" >
             <h2 class="text-center">Clients of My shopp :</h2>
             <a href="{{route('clients.create')}}" class="mb-2 btn btn-success">Add client</a>
-            <table class="table table-bordered">
+            <table class="table table-border-rounded">
                 <thead  class="table-danger">
                 <tr>
                     <th scope="col">Id</th>
@@ -31,13 +31,13 @@
                                 <td>{{$i->city}}</td>
                                 <td>{{$i->phone}}</td>
                                 <td>{{$i->email}}</td>
-                                <td> <a href="{{route('clients.show',$i->id)}}" class="btn btn-primary">Show</a></td>
-                                <td><a href="{{route('clients.edit',$i->id)}}" class="btn btn-success">update</a></td>
+                                <td> <a href="{{route('clients.show',$i->id)}}" class="btn btn-primary"><i class="fa fa-eye"></i></a></td>
+                                <td><a href="{{route('clients.edit',$i->id)}}" class="btn btn-success"><i class="fa fa-pen"></i></a></td>
                                 <td>
                                     <form action="{{route('clients.delete',$i->id)}}" method="post">
                                         @csrf
                                         @method('delete')
-                                        <input type="submit" value="delete" class="btn btn-danger">
+                                        <button type="submit"  class="btn btn-danger"><i class="fa fa-trash"></i></button>
                                     </form>
                                 </td>
                             </tr>

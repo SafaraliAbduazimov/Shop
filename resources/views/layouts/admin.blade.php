@@ -39,7 +39,7 @@
                         <div class="input-group input-group-sm">
                             <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
                             <div class="input-group-append">
-                                <button class="btn btn-navbar" type="submit">
+                                <button class="btn btn-navbar" type="submit" >
                                     <i class="fas fa-search"></i>
                                 </button>
                                 <button class="btn btn-navbar" type="button" data-widget="navbar-search">
@@ -55,7 +55,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <a href="#" class="brand-link">
             <img src="{{asset('dist/img/photo2.png')}}" class="brand-image img-circle elevation-3" style="opacity: .8">
-            <span class="brand-text font-weight-light">Admin</span>
+            <span class="brand-text font-weight-light">Shopp</span>
         </a>
         <div class="sidebar">
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -96,7 +96,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link link-dark">
+                        <a href="{{route('product.index')}}" class="nav-link link-dark">
                             <i class="fa fa-th-list"></i>
                             <p>
                                 Products
@@ -120,12 +120,12 @@
         Adress:/city Dushanbe/
     </footer>
 </div>
+<script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('plugins/jquery-ui/jquery-ui.min.js')}}"></script>
 <script>
     $.widget.bridge('uibutton', $.ui.button)
 </script>
-<script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('plugins/chart.js/Chart.min.js')}}"></script>
 <script src="{{asset('plugins/sparklines/sparkline.js')}}"></script>
 <script src="{{asset('plugins/jqvmap/jquery.vmap.min.js')}}"></script>
